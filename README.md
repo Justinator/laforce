@@ -1,2 +1,2 @@
-# RPI
-WordPress website for RPI
+# LaForce
+WordPress website for LaForce
