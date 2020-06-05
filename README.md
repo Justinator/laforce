@@ -1,2 +1,2 @@
-# laforce
-Custom WordPress theme for LaForce
+# LaForce
+WordPress website for LaForce

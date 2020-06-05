@@ -1,0 +1,26 @@
+.page-id-481, .page-id-1020 {
+  .blocks-gallery-item {
+    height: 250px;
+  }
+  figcaption {
+    padding: 40px 0 10px 0 !important;
+  }
+}
+.page-id-211, .page-id-481, .page-id-475, .page-id-479 {
+  .children {
+    display: none;
+  }
+}
+.page-id-473 {
+    .children li:first-of-type {
+      border-bottom: 1px solid #E8E8E8;
+    }
+    .children a {
+      color: $brandColor !important;
+      transition: .2s ease;
+      &:hover, &:focus {
+        color: $accentColor !important;
+        transition: .2s ease;
+      }
+    }
+}

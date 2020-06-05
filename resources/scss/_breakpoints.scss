@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------
+2.0 Define mobile breakpoints for our site
+--------------------------------------------------------------*/
+@mixin breakpoint($point) {
+  @if $point == smallScreen {
+    @media (min-width: 640px)  { @content; }
+  }
+  @else if $point == mediumScreen {
+    @media (min-width: 768px)  { @content; }
+  }
+  @else if $point == laptopScreen {
+    @media (min-width: 1024px)  { @content; }
+  }
+  @else if $point == largeScreen {
+    @media (min-width: 1400px) { @content; }
+  }
+  @else if $point == megaScreen {
+    @media (min-width: 1600px) { @content; }
+  }
+}

@@ -1,0 +1,433 @@
+/*--------------------------------------------------------------
+16.0 Blog/News Page
+--------------------------------------------------------------*/
+.blog {
+  .page-header {
+    display: none;
+  }
+  .featured-post {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: $accentColor;
+    color: $white;
+    padding: 10px;
+    transition: transform .2s ease;
+    @include breakpoint (mediumScreen) {
+      top: 20px;
+      left: 20px;
+    }
+    &:hover, &:focus {
+      transform: scale(1.1);
+      transition: transform .2s ease;
+    }
+  }
+  .hero {
+    a {
+      text-decoration: none;
+    }
+    h1 {
+      transition: transform .2s ease;
+      text-decoration: none;
+      &:hover, &:focus {
+        color: $accentColor;
+        transform: scale(1.1);
+        transition: transform .2s ease;
+      }
+    }
+    .post-data, a {
+      color: $white;
+      a {
+        text-decoration: underline;
+        transition: transform .2s ease;
+        &:hover, &:focus {
+          color: $accentColor;
+          transition: transform .2s ease;
+        }
+      }
+    }
+    svg {
+      width: 15px;
+      fill: $white;
+    }
+  }
+  .article-wrapper:first-of-type {
+    display: none;
+  }
+  .entry-header {
+    display: block;
+  }
+}
+.blog, .category, .archive {
+  article {
+    transition: .2s ease;
+    transition: opacity .2s ease;
+    &:hover, &:focus {
+      h2 {
+        a {
+          color: $accentColor;
+          transition: .2s ease;
+        }
+      }
+      img {
+        opacity: .8;
+        transition: opacity .2s ease;
+      }
+    }
+  }
+}
+.archive-content {
+  position: relative;
+  padding-bottom: 50px;
+  .pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+.single, article {
+  svg {
+    width: 15px;
+    fill: $brandColor;
+  }
+}
+.post{
+  padding: 10px;
+}
+.attachment-post-thumbnail{
+  width: 100%;
+  height: auto;
+}
+.blog-sidebar {
+  li {
+    padding: 5px !important;
+  }
+}
+#search-2 {
+  background-color: $brandColor;
+  text-align: center;
+  border-radius: 10px;
+  h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: $white;
+  }
+  .searchForm {
+    padding: 0 0 20px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+#categories-2 {
+  margin-top: 10px;
+}
+#categories-2, #archives-2, #social-2, #subscribe {
+  background-color: $lightGrey;
+  padding: 10px;
+  .widget-title {
+    font-size: 1.6em;
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0 0 20px 20px;
+  }
+}
+#archives-2, #social-2, #subscribe {
+  margin-top: 20px;
+}
+#social-2 {
+  a {
+    text-decoration: none;
+  }
+  svg {
+    fill: $brandColor;
+    width: 20px;
+    margin: 0 5px;
+    transition: .2s ease;
+    &:hover, &:focus {
+      fill: $accentColor;
+      transition: .2s ease;
+    }
+  }
+}
+.social-inner{
+  div {
+    padding: 20px;
+  }
+}
+#subscribe {
+  p {
+    padding: 20px;
+  }
+}
+.post-wrapper {
+  .entry-header {
+    display: block;
+  }
+}
+.inner-wrap {
+  padding: 0 0 20px 0;
+}
+.archive {
+  .entry-header {
+    display: block;
+  }
+  .archive-content {
+    .page-header {
+      display: none;
+    }
+  }
+  .hero {
+    a {
+      color: $white;
+      transition: .2s ease;
+      svg {
+        width: 20px;
+        fill: $white;
+        margin-right: 5px;
+        transition: .2s ease;
+      }
+      &:hover, &:focus {
+        color: $accentColor;
+        transition: .2s ease;
+        svg {
+          fill: $accentColor;
+          margin-right: 8px;
+          transition: .2s ease;
+        }
+      }
+    }
+  }
+}
+.pagination {
+  .nav-links {
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    a {
+      padding: 10px;
+    }
+    .prev {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+        &:after {
+          position: absolute;
+          height: auto;
+          width: 20px;
+          top: 20%;
+          left: -15px;
+          transition: .2s ease;
+          content: "\2190";
+        }
+        &:hover, &:focus {
+          &:after {
+            left: -20px;
+            transition: .2s ease;
+          }
+        }
+    }
+    .next {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+        &:after {
+          position: absolute;
+          height: auto;
+          width: 20px;
+          top: 20%;
+          right: -15px;
+          transition: .2s ease;
+          content: "\2192";
+        }
+        &:hover, &:focus {
+          &:after {
+            right: -20px;
+            transition: .2s ease;
+          }
+        }
+    }
+  }
+  .prev, .next {
+    font-size: 20px;
+    position: relative;
+    color: $brandColor;
+    text-decoration: none;
+    padding: 10px;
+    -webkit-transition: .2s ease all;
+    transition: .2s ease all;
+    &:hover, &:focus{
+      -webkit-transition: .2s ease all;
+      transition: .2s ease all;
+    }
+  }
+}
+.pagination {
+  .nav-links {
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: flex;
+  	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    .next, .prev {
+      width: auto;
+      white-space: nowrap;
+      span {
+        display: none;
+        @include breakpoint (mediumScreen) {
+          display: block;
+        }
+      }
+    }
+    .prev {
+      display: flex !important;
+      justify-content: flex-start;
+      align-items: center;
+        &:after {
+          position: absolute;
+          height: 2px;
+          width: 20px;
+          content: "";
+          top: 48%;
+          left: 20px;
+          opacity: 0;
+          transition: .2s ease;
+          background-color: $brandColor;
+        }
+        &:hover, &:focus {
+          &:after {
+            left: 4px;
+            opacity: 1;
+            transition: .2s ease;
+          }
+          .chevron {
+            right: 15px;
+          }
+        }
+      svg {
+        position: relative;
+        right: 18px;
+      }
+    }
+    .next {
+      display: flex !important;
+      justify-content: flex-end;
+      align-items: center;
+        &:after {
+          position: absolute;
+          height: 2px;
+          width: 20px;
+          content: "";
+          top: 48%;
+          right: 20px;
+          opacity: 0;
+          transition: .2s ease;
+          background-color: $brandColor;
+        }
+        &:hover, &:focus {
+          &:after {
+            right: 4px;
+            opacity: 1;
+            transition: .2s ease;
+          }
+          .chevron {
+            left: 15px;
+          }
+        }
+      svg {
+        position: relative;
+        left: 18px;
+      }
+    }
+    .current {
+      color: $secondaryBrandAccent;
+    }
+    .page-numbers {
+      display: none;
+      text-decoration: none;
+      @include breakpoint (mediumScreen) {
+        display: block;
+      }
+    }
+  }
+  .prev, .next {
+    .arrow-right, .arrow-left {
+      opacity: 0;
+    }
+    &:hover, &:focus {
+      .arrow-right, .arrow-left {
+        opacity: 1;
+      }
+    }
+    a {
+      position: relative;
+      color: $brandColor;
+      text-decoration: none;
+      padding: 10px;
+      -webkit-transition: .3s ease all;
+      transition: .3s ease all;
+      &:hover, &:focus{
+        -webkit-transition: .3s ease all;
+        transition: .3s ease all;
+      }
+    }
+  }
+  svg {
+    width: 30px;
+    fill: $brandColor;
+  }
+}
+.subscribe-form-slideup {
+  display: none;
+  position: fixed;
+  bottom: -60px;
+  z-index: 99;
+  background-color: $lightGrey;
+  width: 100%;
+  transition: .3s ease;
+  @include breakpoint (mediumScreen) {
+    display: block;
+  }
+  h6 {
+    margin-right: 15px;
+  }
+  .gform_wrapper {
+    margin: 0 !important;
+    form {
+      display: flex;
+      align-items: center;
+    }
+    li {
+      padding-right: 0 !important;
+      margin-top: 0 !important;
+    }
+    .ginput_container {
+      margin-top: 0 !important;
+    }
+    label {
+      display: none !important;
+    }
+    #input_6_1 {
+      background-color: $white !important;
+    }
+    .gform_footer {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    .gform_footer input[type=submit] {
+      padding: 8px 20px;
+    }
+  }
+}
+.slide-up {
+    transform: translateY(-60px);
+		transition: .3s ease;
+}

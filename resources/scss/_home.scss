@@ -1,0 +1,179 @@
+/*--------------------------------------------------------------
+11.0 Homepage
+--------------------------------------------------------------*/
+.fig {
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 100%;
+  max-width: 600px;
+  &:hover, &:focus {
+    .fig-more {
+      top: 0;
+    }
+  }
+}
+.fig-tall {
+  height: 250px;
+  @include breakpoint (laptopScreen) {
+    height: 520px;
+  }
+}
+.figcaption {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.figcaption h3 {
+  margin: 0;
+  padding: 20px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+}
+.fig-more {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 47, 109, 0.75);
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 5;
+  -webkit-transition: top .25s;
+  transition: top .25s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p {
+    color: $white;
+  }
+}
+.fig-more-inner {
+  padding: 20px;
+}
+.figcaption:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  z-index: 3;
+  -webkit-box-shadow: inset 0 0 0 1px #FFF;
+  box-shadow: inset 0 0 0 1px #FFF;
+}
+.wp-block-column:nth-child(2n) {
+  margin-left: 0;
+  @include breakpoint (laptopScreen) {
+    margin-left: 32px;
+  }
+}
+.services {
+  .wp-block-column:nth-child(2n) {
+    margin-left: 0;
+    @include breakpoint (smallScreen) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    @include breakpoint (laptopScreen) {
+      margin-left: 32px;
+    }
+  }
+  @include breakpoint (smallScreen) {
+    .wp-block-column {
+      flex-basis: calc(33% - 16px);
+    }
+  }
+  @include breakpoint (laptopScreen) {
+    .wp-block-column {
+      flex-basis: calc(50% - 16px);
+    }
+  }
+}
+.icon-columns {
+  .wp-block-column {
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      &:hover, &:focus {
+        color: $accentColor;
+        transition: .2s ease;
+        .icon-wrapper {
+          background: $accentColor;
+          transition: .2s ease;
+        }
+        h4 {
+          color: $accentColor;
+          transition: .2s ease;
+        }
+      }
+    }
+  }
+}
+.icon-wrapper:first-of-type{
+  img {
+    width: 75%;
+    height: 75%;
+  }
+}
+.icon-wrapper {
+  background: $brandColor;
+  border-radius: 50px;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    width: 50px;
+    fill: $white;
+  }
+}
+.featured-project-wrap {
+  .container-wide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+.featured-project-content {
+  margin: 20px;
+  border: 0 none;
+  padding: 20px 20px 1px;
+  background: #FFF;
+  -webkit-box-shadow: inset 0 0 0 2px #B5BE00, inset 0 0 0 8px #E8E8E8;
+  box-shadow: inset 0 0 0 2px #B5BE00, inset 0 0 0 8px #E8E8E8;
+}
+.featured-project-inner {
+  padding: 20px 20px 40px 20px;
+}
+.partner-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  @include breakpoint (mediumScreen) {
+    justify-content: space-between;
+  }
+}

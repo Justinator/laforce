@@ -1,0 +1,81 @@
+/*--------------------------------------------------------------
+6.0 Footer
+--------------------------------------------------------------*/
+.site-footer{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	margin: 0 auto;
+	background-color: $black;
+	color: $white;
+	p {
+		color: $white !important;
+	}
+	svg {
+		width: 16px;
+		fill: $white;
+		margin: 0 5px;
+		transition: .2s ease;
+		&:hover, &:focus {
+			fill: $accentColor;
+			transition: .2s ease;
+		}
+	}
+}
+#footer-content {
+	padding: 30px 20px;
+}
+.menu-footer-menu-container {
+	display: flex;
+  justify-content: center;
+	@include breakpoint (laptopScreen) {
+		justify-content: flex-start;
+	}
+}
+#menu-footer-menu {
+	display: flex;
+	padding: 0;
+	flex-wrap: wrap;
+	justify-content: center;
+	li {
+		list-style-type: none;
+		font-size: 12px;
+		white-space: nowrap;
+	}
+}
+#copyright{
+	font-size: 14px;
+		p{
+			margin-top: 0;
+			margin-bottom: 0 !important;
+		}
+		a:first-of-type {
+			margin-left: 10px;
+		}
+		a {
+			color: $white;
+			margin: 5px;
+			transition: .2s ease;
+			text-decoration: none;
+			&:hover, &:focus {
+				color: $accentColor;
+				transition: .2s ease;
+			}
+		}
+}
+#footer-phone {
+	color: $white;
+	font-weight: bold;
+  text-decoration: none;
+	font-size: 16px;
+	transition: .2s ease;
+	&:hover, &:focus {
+		color: $accentColor;
+		transition: .2s ease;
+	}
+}
+#social {
+	a {
+		text-decoration: none;
+	}
+}
