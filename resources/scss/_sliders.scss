@@ -1,0 +1,120 @@
+// flickity styles
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,47,109,0.75);
+  @include breakpoint (laptopScreen) {
+    width: 50%;
+  }
+}
+.hero-slider {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  @include breakpoint (mediumScreen) {
+    height: 50vh;
+  }
+  .carousel-cell {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center !important;
+    display: flex;
+    .inner {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      padding: 20px;
+      @include breakpoint (laptopScreen) {
+        width: 40%;
+      }
+      .title {
+        font-size: 2rem;
+        line-height: 1.1em;
+        text-transform: uppercase;
+        font-weight: normal;
+        color: white;
+        @include breakpoint (laptopScreen) {
+          font-size: 2.6rem;
+        }
+      }
+      p {
+        color: $white;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .flickity-page-dots {
+    bottom: 30px;
+    width: 50%;
+    .dot{
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+      background: $white;
+      border: $white;
+      &.is-selected{
+        background: $accentColor;
+        border: $accentColor;
+      }
+    }
+  }
+}
+.testimonial-slider {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center !important;
+  @include breakpoint (mediumScreen) {
+    height: 50vh;
+  }
+  @include breakpoint (laptopScreen) {
+    height: 45vh;
+  }
+  .carousel-cell {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,47,109,0.75);
+    }
+    .inner {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 20px;
+      width: 90%;
+    }
+  }
+  .flickity-page-dots {
+    bottom: 30px;
+    width: 50%;
+    .dot{
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+      background: $white;
+      border: $white;
+      &.is-selected{
+        background: $accentColor;
+        border: $accentColor;
+      }
+    }
+  }
+}

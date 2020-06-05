@@ -1,2 +1,2 @@
-# laforce
-Custom WordPress theme for LaForce
+# RPI
+WordPress website for RPI

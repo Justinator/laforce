@@ -1,0 +1,116 @@
+/*--------------------------------------------------------------
+7.0 Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $black;
+	font-family: $titillium;
+	font-size: 18px;
+	line-height: 1.4em;
+	@include breakpoint (smallScreen) {
+		font-size: 20px;
+	}
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: $titillium;
+	font-weight: 700;
+	color: $brandColor;
+	line-height: 1.1em;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+h1 { font-size: 2.1em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.3em; }
+h6 { font-size: 1.2em; }
+/* Type Scale Gears*/
+.g1 {
+	font-size: 2.1em;
+	@include breakpoint (laptopScreen) {
+		font-size: 2.1em;
+	}
+}
+.g2 {
+	font-size: 1.8em;
+	@include breakpoint (laptopScreen) {
+		font-size: 1.8em;
+	}
+}
+.g3 {
+	font-size: 1.6em;
+	@include breakpoint (laptopScreen) {
+		font-size: 1.6em;
+	}
+}
+.g4 {
+	font-size: 1.4em;
+	@include breakpoint (laptopScreen) {
+		font-size: 1.4em;
+	}
+}
+.g5 {
+	font-size: 1.3em;
+	@include breakpoint (laptopScreen) {
+		font-size: 1.3em;
+	}
+}
+.g6 {
+	font-size: 1.2em;
+	@include breakpoint (laptopScreen) {
+		font-size: 1.2em;
+	}
+}
+.g7 {
+	font-size: 1em;
+	@include breakpoint (laptopScreen) {
+		font-size: 1em;
+	}
+}
+.g8 {
+	font-size: .8em;
+	@include breakpoint (laptopScreen) {
+		font-size: .8em;
+	}
+}
+.text-left { text-align: left !important; }
+.text-right { text-align: right !important; }
+.text-center { text-align: center !important; }
+@include breakpoint (smallScreen) {
+  .text-left-s { text-align: left !important; }
+  .text-right-s { text-align: right !important; }
+  .text-center-s { text-align: center !important; }
+}
+@include breakpoint (mediumScreen) {
+  .text-left-m { text-align: left !important; }
+  .text-right-m { text-align: right !important; }
+  .text-center-m { text-align: center !important; }
+}
+@include breakpoint (laptopScreen) {
+  .text-left-l { text-align: left !important; }
+  .text-right-l { text-align: right !important; }
+  .text-center-l { text-align: center !important; }
+}
+.i { font-style: italic; }
+.b { font-weight: bold; }
+.underline { text-decoration: underline; }
+.strike { text-decoration: line-through; }
+.shift-first { text-transform: capitalize; }
+.shift-up { text-transform: uppercase; }
+.fw4 { font-weight: 400; }
+.fw5 { font-weight: 500; }
+.fw6 { font-weight: 600; }
+.fw7 { font-weight: 700; }
+.fw8 { font-weight: 800; }
+.fw9 { font-weight: 900; }
+.text-white {color: $white;}
+.no-margin {margin:0;}

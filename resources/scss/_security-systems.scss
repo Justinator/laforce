@@ -1,0 +1,25 @@
+.page-id-483 {
+  .featured-project {
+    .container-wide {
+      width: 100%;
+      padding: 0;
+    }
+    h4 {
+      padding-left: 20px;
+    }
+  }
+}
+.external {
+  svg {
+    width: 20px;
+    margin-left: 10px;
+    fill: $brandColor;
+    transition: .2s ease;
+  }
+  &:hover, &:focus {
+    svg {
+      fill: $accentColor;
+      transition: .2s ease;
+    }
+  }
+}

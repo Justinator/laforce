@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+8.0 Buttons
+--------------------------------------------------------------*/
+.btn-fill {
+	background: $accentColor;
+  font: inherit;
+  line-height: 1;
+  padding: 10px 20px;
+	color: $white;
+  transition: 0.25s;
+	border: 2px solid $accentColor;
+	text-decoration: none;
+	text-transform: uppercase;
+  &:hover,
+  &:focus {
+    border: 2px solid $brandColor;
+		background: $brandColor;
+    color: #fff;
+  }
+}
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em $brandColor;
+}
+.btn-fill-alt {
+	background: $brandColor;
+  font: inherit;
+  line-height: 1;
+  padding: 10px 20px;
+	color: $white;
+  transition: 0.25s;
+	border: 2px solid $brandColor;
+	text-decoration: none;
+	text-transform: uppercase;
+  &:hover,
+  &:focus {
+    border: 2px solid $accentColor;
+		background: $accentColor;
+    color: #fff;
+  }
+}
+.fill-alt:hover,
+.fill-alt:focus {
+  box-shadow: inset 0 0 0 2em $accentColor;
+}
+.careers-btn {
+	background: rgba(0,0,0,0);
+  border: 2px solid $white;
+  font: inherit;
+  line-height: 1;
+  padding: 10px 20px;
+	color: $white;
+  transition: 0.25s;
+	text-decoration: none;
+	text-transform: uppercase;
+  &:hover,
+  &:focus {
+    border: 2px solid $brandColor;
+		background: $brandColor;
+    color: #fff;
+  }
+}
+.careers-fill:hover,
+.careers-fill:focus {
+  box-shadow: inset 0 0 0 2em $brandColor;
+}
+button{
+	background-color: $transparent;
+	border: none;
+}
