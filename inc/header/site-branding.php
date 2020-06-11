@@ -20,7 +20,7 @@
       </button>
     </div>
   </div>
-  <?php get_template_part('/inc/header/main-menu'); ?>
+  <?php get_template_part( '/inc/header/main-menu' ); ?>
   <div id="search-form-wrap">
     <div id="search-form-inner" class="w-70">
       <?php get_search_form(); ?>

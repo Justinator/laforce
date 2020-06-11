@@ -25,14 +25,14 @@
 	    <?php
 	    if ( $parent == "209" || $parent == "211" || $parent == "483" || $parent == "217" ) {
 				?>
-	      <li><a href="<?php echo esc_url( get_permalink( $parent )); ?>" class="subnav-back flex flex-row flex-align-center"><?php get_template_part("/inc/svg-icons/chevron-left"); ?><?php echo get_the_title($parent); ?></a></li>
+	      <li><a href="<?php echo esc_url( get_permalink( $parent )); ?>" class="subnav-back block"><?php get_template_part("/inc/svg-icons/chevron-left"); ?><?php echo get_the_title($parent); ?></a></li>
 				<?php
 	    }
 	    ?>
 	    <?php echo $children;
 			if ( $parent == "483") {
 				?>
-	      <li><a href="https://support.laforceinc.com/" class="external flex flex-row flex-align-center" target="_blank">Security Systems Remote Support <?php get_template_part("/inc/svg-icons/external-link"); ?></a></li>
+	      <li><a href="https://support.laforceinc.com/" class="external block" target="_blank">Security Systems Remote Support <?php get_template_part("/inc/svg-icons/external-link"); ?></a></li>
 				<span class="screen-reader-text">Opens Security Systems Remote Support link in a new window</span>
 				<?php
 	    } elseif ( $parent == "217") {

@@ -23,7 +23,7 @@ get_header();
 					Click on the images/links below to learn more about each project.
 				</p>
 			</div>
-			<div class="container-wide flex flex-center flex-wrap-m flex-column flex-row-m flex-row-m">
+			<div class="container-wide flex flex-center flex-wrap-m flex-column flex-row-m">
 				<?php
 				while ( have_posts() ) :
 					the_post();

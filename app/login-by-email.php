@@ -1,6 +1,6 @@
 <?php
 /********************************************
-Remove default authentication and require login through password only
+Remove default authentication and require login through email and password only
 *********************************************/
 //remove wordpress authentication
 remove_filter('authenticate', 'wp_authenticate_username_password', 20);

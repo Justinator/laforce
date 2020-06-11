@@ -111,45 +111,45 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 /*********************************************************
 Advanced Custom Fields Customizations
 *********************************************************/
-require_once("app/acf/acf.php");
+require_once( "app/acf/acf.php" );
 /********************************************
 Require login by email address
 ********************************************/
-require_once("app/login-by-email.php");
+require_once( "app/login-by-email.php" );
 /********************************************
  Add in our custom Gutenberg blocks
 ********************************************/
-require_once("inc/acf-gutenblocks.php");
+require_once( "inc/acf-gutenblocks.php" );
 /*********************************************
 Limit Login Attempts
 *********************************************/
-require_once("app/limit-login.php");
+require_once( "app/limit-login.php" );
 /********************************************
 Create a custom archive by year instead of
 by month like the default widget creates
 ********************************************/
-require_once("app/custom-archive.php");
+require_once( "app/custom-archive.php" );
 /********************************************
  Add in our custom post types and breadcrumbs
 ********************************************/
-require_once("inc/portfolio/custom-post-type.php");
-require_once("inc/portfolio/custom-cats.php");
+require_once( "inc/portfolio/custom-post-type.php" );
+require_once( "inc/portfolio/custom-cats.php" );
 /********************************************
  Remove the WordPress emojis
 ********************************************/
-require_once("app/remove-emoji.php");
-require_once("app/custom-login-url.php");
+require_once( "app/remove-emoji.php" );
+require_once( "app/custom-login-url.php" );
 /*********************************************************
 Enqueue scripts and styles
 *********************************************************/
 function insightcustom_scripts() {
 	wp_enqueue_style( 'insightcustom-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'insight-custom-style', get_stylesheet_directory_uri() . '/resources/css/style.min.css');
+	wp_enqueue_style( 'insight-custom-style', get_stylesheet_directory_uri() . '/assets/css/style.min.css');
 	wp_enqueue_style( 'titillium-web', 'https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900&display=swap', false );
-	wp_enqueue_script( 'flickity', get_template_directory_uri() . '/resources/assets/flickity/flickity.pkgd.min.js' );
-	wp_enqueue_script( 'customizer', get_template_directory_uri() . '/resources/js/customizer.js' );
-	wp_enqueue_script( 'custom', get_template_directory_uri() . '/resources/js/custom.min.js' );
-	wp_enqueue_script( 'vendor', get_template_directory_uri() . '/resources/js/vendor.min.js' );
+	wp_enqueue_script( 'flickity', get_template_directory_uri() . '/assets/libs/flickity/flickity.pkgd.min.js' );
+	wp_enqueue_script( 'customizer', get_template_directory_uri() . '/assets/js/customizer.js' );
+	wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/js/custom.min.js' );
+	wp_enqueue_script( 'vendor', get_template_directory_uri() . '/assets/js/vendor.min.js' );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

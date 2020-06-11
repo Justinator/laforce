@@ -1,8 +1,8 @@
 <?php
-  $leaderImage = get_field('leader_image');
-  $name = get_field('leader_name');
-  $desc = get_field('leader_short_description');
-  $url = get_field('leader_page_url');
+  $leaderImage = get_field( 'leader_image' );
+  $name = get_field( 'leader_name' );
+  $desc = get_field( 'leader_short_description' );
+  $url = get_field( 'leader_page_url' );
 ?>
 
 <figure class="fig" style="background-image: url('<?php echo $leaderImage ?>');">

@@ -92,8 +92,8 @@ get_header();
 				<?php echo $gallery; ?>
 			</section>
 		<?php } ?>
-		<?php get_template_part("/inc/portfolio/custom-post-nav"); ?>
-		<?php get_template_part("/inc/portfolio/related-projects"); ?>
+		<?php get_template_part( "/inc/portfolio/custom-post-nav" ); ?>
+		<?php get_template_part( "/inc/portfolio/related-projects" ); ?>
 	</main>
 </div>
 <?php

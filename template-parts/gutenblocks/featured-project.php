@@ -1,7 +1,7 @@
 <?php
-  $backgroundImage = get_field('project_featured_image');
-  $title = get_field('project_title');
-  $url = get_field('project_url');
+  $backgroundImage = get_field( 'project_featured_image' );
+  $title = get_field( 'project_title' );
+  $url = get_field( 'project_url' );
 ?>
 
 <figure class="fig" style="background-image: url('<?php echo $backgroundImage ?>');">

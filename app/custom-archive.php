@@ -1,5 +1,5 @@
 <?php
-// Function to get archives list with limited months
+// Function to get archives list by year
 function wpb_limit_archives() {
 $my_archives = wp_get_archives(array(
   'type'=>'yearly',

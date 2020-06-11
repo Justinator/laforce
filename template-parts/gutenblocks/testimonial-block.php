@@ -1,10 +1,10 @@
 <div class="testimonial-slider" data-carousel style="background-image: url('/assets/css/wp-content/themes/insightcustom/images/LaForce-Office-Entrance.jpg');">
-<?php if( have_rows('testimonial_slider') ): ?>
-	<?php while( have_rows('testimonial_slider') ): the_row();
+<?php if( have_rows( 'testimonial_slider' ) ): ?>
+	<?php while( have_rows( 'testimonial_slider' ) ): the_row();
 	// vars
-	$slideHeading = get_sub_field('slide_heading');
-	$slideContent = get_sub_field('slide_content');
-	$author = get_sub_field('testimonial_author');
+	$slideHeading = get_sub_field( 'slide_heading' );
+	$slideContent = get_sub_field( 'slide_content' );
+	$author = get_sub_field( 'testimonial_author' );
 	?>
 	<div class="carousel-cell">
 		<div class="overlay">

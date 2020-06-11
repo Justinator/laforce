@@ -33,6 +33,13 @@
 	  })();
 	</script>
 	-->
+	<?php
+
+		if( get_theme_mod( 'header_scripts' ) ) {
+			echo get_theme_mod( 'header_scripts' );
+		}
+
+		?>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

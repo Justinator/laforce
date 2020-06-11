@@ -1,6 +1,6 @@
 <?php
   $featuredImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-  $customHeroTitle = get_field('custom_hero_title');
+  $customHeroTitle = get_field( 'custom_hero_title' );
   $postid = get_the_ID();
   $bodyClass = get_body_class();
   if ( is_home() ) {
@@ -22,7 +22,7 @@
       					</span>
       					<span class="post-cat">
       					<?php
-      					get_template_part("/inc/svg-icons/tags");
+      					get_template_part( "/inc/svg-icons/tags" );
       					$categories = get_the_category();
       					$separator = ' | ';
       					$output = '';
@@ -127,13 +127,13 @@
       </video>
       <div class="video-caption">
         <ul>
-          <li><?php get_template_part("/inc/svg-icons/play"); ?>Fire Doors  (4m 55s)</li>
+          <li><?php get_template_part( "/inc/svg-icons/play" ); ?>Fire Doors  (4m 55s)</li>
         </ul>
       </div>
     </section>
     <div class="popup-video-container">
       <div class="video-container-inner">
-        <?php get_template_part("/inc/svg-icons/close"); ?>
+        <?php get_template_part( "/inc/svg-icons/close" ); ?>
         <div class="aspect-ratio">
           <iframe class="youtube-player" type="text/html" width="700" height="350" src="//www.youtube.com/embed/qunBxV9dabo?rel=0&amp;showinfo=0" frameborder="0"><!-- YouTube Player --></iframe>
         </div>
@@ -150,13 +150,13 @@
       </video>
       <div class="video-caption">
         <ul>
-          <li><?php get_template_part("/inc/svg-icons/play"); ?>Pre-Install  (2m 45s)</li>
+          <li><?php get_template_part( "/inc/svg-icons/play" ); ?>Pre-Install  (2m 45s)</li>
         </ul>
       </div>
     </section>
     <div class="popup-video-container">
       <div class="video-container-inner">
-        <?php get_template_part("/inc/svg-icons/close"); ?>
+        <?php get_template_part( "/inc/svg-icons/close" ); ?>
         <div class="aspect-ratio">
           <iframe class="youtube-player" type="text/html" width="320" height="200" src="//www.youtube.com/embed/2uQ4CJQ5fdk?rel=0&amp;showinfo=0" frameborder="0"><!-- YouTube Player --></iframe>
         </div>
@@ -173,7 +173,7 @@
       </video>
       <div class="video-caption">
         <ul>
-          <li><?php get_template_part("/inc/svg-icons/play"); ?>Careers  (2m 34s)</li>
+          <li><?php get_template_part( "/inc/svg-icons/play" ); ?>Careers  (2m 34s)</li>
         </ul>
       </div>
     </section>
@@ -185,7 +185,7 @@
     </div>
     <div class="popup-video-container">
       <div class="video-container-inner">
-        <?php get_template_part("/inc/svg-icons/close"); ?>
+        <?php get_template_part( "/inc/svg-icons/close" ); ?>
         <div class="aspect-ratio">
           <iframe class="youtube-player" type="text/html" width="320" height="200" src="//www.youtube.com/embed/yS-usgK-0JQ?rel=0&amp;showinfo=0" frameborder="0"><!-- YouTube Player --></iframe>
         </div>

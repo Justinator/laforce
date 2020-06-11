@@ -1,5 +1,5 @@
 <?php
-	$affiliateHeading = get_field("affiliate_heading");
+	$affiliateHeading = get_field( "affiliate_heading" );
 	if (!empty( $affiliateHeading )) {
 		?>
 		<div class="bg-secondary padding-top-25 padding-bottom-25">
@@ -11,10 +11,10 @@
 <div class="affilliates">
 	<div class="affiliate-wrap">
 		<div class="affiliate-inner padding-top-25 padding-bottom-25">
-			<?php if( have_rows('affiliations') ): ?>
-				<?php while( have_rows('affiliations') ): the_row();
+			<?php if( have_rows( 'affiliations' ) ): ?>
+				<?php while( have_rows( 'affiliations' ) ): the_row();
 				// vars
-				$logo = get_sub_field('affiliate_logo');
+				$logo = get_sub_field( 'affiliate_logo' );
 				?>
 				<?php
 	        $imageID = $logo['ID'];

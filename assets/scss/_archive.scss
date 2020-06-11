@@ -2,6 +2,12 @@
 16.0 Blog/News Page
 --------------------------------------------------------------*/
 .blog {
+  h1 {
+    font-size: 6vw;
+    @include breakpoint (smallScreen) {
+      font-size: 2.1em;
+    }
+  }
   .page-header {
     display: none;
   }
@@ -58,6 +64,11 @@
     display: block;
   }
 }
+.paged {
+  .featured-post {
+    display: none;
+  }
+}
 .blog, .category, .archive {
   article {
     transition: .2s ease;
@@ -76,13 +87,18 @@
     }
   }
 }
+.pagination-wrapper {
+  width: 99%;
+}
 .archive-content {
   position: relative;
   padding-bottom: 50px;
   .pagination {
-    position: absolute;
     bottom: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid $lightGrey;
   }
 }
 .single, article {
@@ -120,18 +136,31 @@
 }
 #categories-2 {
   margin-top: 10px;
+  display: none;
+  @include breakpoint (laptopScreen) {
+    display: block;
+  }
 }
-#categories-2, #archives-2, #social-2, #subscribe {
+#categories-3 {
+  margin-top: 10px;
+  display: block;
+  @include breakpoint (laptopScreen) {
+    display: none;
+  }
+  select {
+    width: 100%;
+  }
+}
+#categories-2, #categories-3, #archives-2, #social-2, #subscribe {
   background-color: $lightGrey;
-  padding: 10px;
+  padding: 20px;
   .widget-title {
     font-size: 1.6em;
-    padding-left: 20px;
     margin-bottom: 0;
   }
   ul {
     list-style-type: none;
-    padding: 0 0 20px 20px;
+    padding: 0;
   }
 }
 #archives-2, #social-2, #subscribe {
@@ -154,12 +183,12 @@
 }
 .social-inner{
   div {
-    padding: 20px;
+    padding: 20px 0;
   }
 }
 #subscribe {
   p {
-    padding: 20px;
+    padding: 20px 0;
   }
 }
 .post-wrapper {
@@ -351,11 +380,7 @@
       color: $secondaryBrandAccent;
     }
     .page-numbers {
-      display: none;
       text-decoration: none;
-      @include breakpoint (mediumScreen) {
-        display: block;
-      }
     }
   }
   .prev, .next {

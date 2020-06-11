@@ -39,6 +39,13 @@
 	  });
 	});
 </script>
+<?php
+
+	if( get_theme_mod( 'footer_scripts' ) ) {
+		echo get_theme_mod( 'footer_scripts' );
+	}
+
+	?>
 <?php wp_footer(); ?>
 </body>
 </html>

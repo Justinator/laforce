@@ -30,7 +30,7 @@
 					</span>
 					<span class="post-cat">
 					<?php
-					get_template_part("/inc/svg-icons/tags");
+					get_template_part( "/inc/svg-icons/tags" );
 					$categories = get_the_category();
 					$separator = ' | ';
 					$output = '';

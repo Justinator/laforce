@@ -9,7 +9,7 @@
           wp_nav_menu( array(
               'theme_location'    => 'main-menu',
               'container_class'				=> 'main-menu',
-              'depth'             => 4,
+              'depth'             => 1,
               'container'         => false,
               'items_wrap' 				=> '%3$s'
           ) );

@@ -31,7 +31,7 @@ get_header();
 	<div class="subscribe-form-slideup">
 		<div class="container-wide flex flex-center padding-10">
 			<h6 class="no-margin">Subscribe to Our Blog</h6>
-			<?php echo do_shortcode('[gravityform id="6" title="false" description="false" ajax="true"]'); ?>
+			<?php echo do_shortcode( '[gravityform id="6" title="false" description="false" ajax="true"]' ); ?>
 		</div>
 	</div>
 </div><!-- #primary -->

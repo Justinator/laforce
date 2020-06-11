@@ -45,6 +45,7 @@ website:    http://www.burocratik.com
 #outdated .last[dir='rtl']{right:auto !important;left:25px !important}
 #outdated #btnCloseUpdateBrowser{display:block;position:relative;width:100%;height:100%;text-decoration:none;color:#fff;font-size:36px;line-height:36px}
 * html #outdated{position:absolute}
+.blog h1{font-size:6vw}
 .blog .page-header{display:none}
 .blog .featured-post{position:absolute;top:10px;left:10px;background-color:#61a60e;color:#fff;padding:10px;-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;transition:transform .2s ease;transition:transform .2s ease,-webkit-transform .2s ease}
 .blog .featured-post:hover,.blog .featured-post:focus{-webkit-transform:scale(1.1);transform:scale(1.1);-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;transition:transform .2s ease;transition:transform .2s ease,-webkit-transform .2s ease}
@@ -57,11 +58,13 @@ website:    http://www.burocratik.com
 .blog .hero svg{width:15px;fill:#fff}
 .blog .article-wrapper:first-of-type{display:none}
 .blog .entry-header{display:block}
+.paged .featured-post{display:none}
 .blog article,.category article,.archive article{-webkit-transition:.2s ease;transition:.2s ease;-webkit-transition:opacity .2s ease;transition:opacity .2s ease}
 .blog article:hover h2 a,.blog article:focus h2 a,.category article:hover h2 a,.category article:focus h2 a,.archive article:hover h2 a,.archive article:focus h2 a{color:#61a60e;-webkit-transition:.2s ease;transition:.2s ease}
 .blog article:hover img,.blog article:focus img,.category article:hover img,.category article:focus img,.archive article:hover img,.archive article:focus img{opacity:.8;-webkit-transition:opacity .2s ease;transition:opacity .2s ease}
+.pagination-wrapper{width:99%}
 .archive-content{position:relative;padding-bottom:50px}
-.archive-content .pagination{position:absolute;bottom:0;left:0}
+.archive-content .pagination{bottom:0;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border-top:2px solid #e8e8e8}
 .single svg,article svg{width:15px;fill:#002f6d}
 .post{padding:10px}
 .attachment-post-thumbnail{width:100%;height:auto}
@@ -69,16 +72,18 @@ website:    http://www.burocratik.com
 #search-2{background-color:#002f6d;text-align:center;border-radius:10px}
 #search-2 h2{font-size:1.6em;font-weight:700;color:#fff}
 #search-2 .searchForm{padding:0 0 20px 0;border-bottom-left-radius:10px;border-bottom-right-radius:10px}
-#categories-2{margin-top:10px}
-#categories-2,#archives-2,#social-2,#subscribe{background-color:#e8e8e8;padding:10px}
-#categories-2 .widget-title,#archives-2 .widget-title,#social-2 .widget-title,#subscribe .widget-title{font-size:1.6em;padding-left:20px;margin-bottom:0}
-#categories-2 ul,#archives-2 ul,#social-2 ul,#subscribe ul{list-style-type:none;padding:0 0 20px 20px}
+#categories-2{margin-top:10px;display:none}
+#categories-3{margin-top:10px;display:block}
+#categories-3 select{width:100%}
+#categories-2,#categories-3,#archives-2,#social-2,#subscribe{background-color:#e8e8e8;padding:20px}
+#categories-2 .widget-title,#categories-3 .widget-title,#archives-2 .widget-title,#social-2 .widget-title,#subscribe .widget-title{font-size:1.6em;margin-bottom:0}
+#categories-2 ul,#categories-3 ul,#archives-2 ul,#social-2 ul,#subscribe ul{list-style-type:none;padding:0}
 #archives-2,#social-2,#subscribe{margin-top:20px}
 #social-2 a{text-decoration:none}
 #social-2 svg{fill:#002f6d;width:20px;margin:0 5px;-webkit-transition:.2s ease;transition:.2s ease}
 #social-2 svg:hover,#social-2 svg:focus{fill:#61a60e;-webkit-transition:.2s ease;transition:.2s ease}
-.social-inner div{padding:20px}
-#subscribe p{padding:20px}
+.social-inner div{padding:20px 0}
+#subscribe p{padding:20px 0}
 .post-wrapper .entry-header{display:block}
 .inner-wrap{padding:0 0 20px 0}
 .archive .entry-header{display:block}
@@ -111,7 +116,7 @@ website:    http://www.burocratik.com
 .pagination .nav-links .next:hover .chevron,.pagination .nav-links .next:focus .chevron{left:15px}
 .pagination .nav-links .next svg{position:relative;left:18px}
 .pagination .nav-links .current{color:#0090ba}
-.pagination .nav-links .page-numbers{display:none;text-decoration:none}
+.pagination .nav-links .page-numbers{text-decoration:none}
 .pagination .prev .arrow-right,.pagination .prev .arrow-left,.pagination .next .arrow-right,.pagination .next .arrow-left{opacity:0}
 .pagination .prev:hover .arrow-right,.pagination .prev:hover .arrow-left,.pagination .prev:focus .arrow-right,.pagination .prev:focus .arrow-left,.pagination .next:hover .arrow-right,.pagination .next:hover .arrow-left,.pagination .next:focus .arrow-right,.pagination .next:focus .arrow-left{opacity:1}
 .pagination .prev a,.pagination .next a{position:relative;color:#002f6d;text-decoration:none;padding:10px;-webkit-transition:.3s ease all;transition:.3s ease all}
@@ -236,7 +241,7 @@ https://flickity.metafizzy.co
 #footer-phone:hover,#footer-phone:focus{color:#61a60e;-webkit-transition:.2s ease;transition:.2s ease}
 #social a{text-decoration:none}
 body{background:#fff;margin:0;overflow-x:hidden}
-.site-content{margin-top:90px}
+.site-content{margin-top:80px}
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute !important;width:1px;word-wrap:normal !important}
 ::-moz-selection{background:rgba(97,166,14,0.5);color:#fff}
 ::selection{background:rgba(97,166,14,0.5);color:#fff}
@@ -603,7 +608,8 @@ h6{font-size:1.2em}
 #pages .pagenav{list-style-type:none}
 @media all and (-ms-high-contrast:none){#outdated{display:block}
 #outdated.hidden{display:none}
-}@media(min-width:640px){.none-s{display:none !important}
+}@media(min-width:640px){.blog h1{font-size:2.1em}
+.none-s{display:none !important}
 .block-s{display:block !important}
 .flex-s{display:-ms-flexbox !important;display:-webkit-box !important;display:flex !important}
 .flex-column-s{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
@@ -664,7 +670,6 @@ body,button,input,select,optgroup,textarea{font-size:20px}
 .services .wp-block-column{-ms-flex-preferred-size:calc(33% - 16px);flex-basis:calc(33% - 16px)}
 }@media(min-width:768px){.blog .featured-post{top:20px;left:20px}
 .pagination .nav-links .next span,.pagination .nav-links .prev span{display:block}
-.pagination .nav-links .page-numbers{display:block}
 .subscribe-form-slideup{display:block}
 .none-m{display:none !important}
 .block-m{display:block !important}
@@ -727,7 +732,9 @@ body,button,input,select,optgroup,textarea{font-size:20px}
 .gallery-container .gallery figure{max-width:calc(90% / 3)}
 .nav-links-container .nav-links .nav-next span,.nav-links-container .nav-links .nav-previous span,.posts-navigation .nav-links .nav-next span,.posts-navigation .nav-links .nav-previous span{display:block}
 .partner-inner{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-}@media(min-width:1024px){.none-l{display:none !important}
+}@media(min-width:1024px){#categories-2{display:block}
+#categories-3{display:none}
+.none-l{display:none !important}
 .block-l{display:block !important}
 .flex-l{display:-ms-flexbox !important;display:-webkit-box !important;display:flex !important}
 .flex-container{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
