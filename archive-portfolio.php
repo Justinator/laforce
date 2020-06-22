@@ -17,18 +17,32 @@ get_header();
       </div>
     </section>
 		<div class="container-wide center">
-			<div class="lane-wide padding-top-25">
+			<div class="lane-wide padding-top-25 padding-bottom-25">
 				<p>
-					These projects represent some of the most recent, challenging, and enjoyable projects that we’ve had the pleasure of producing.
-					Click on the images/links below to learn more about each project.
+					We have worked on projects of all sizes across the country including, healthcare, educational facilities, government buildings, industrial, religious, multi-residential housing and much more.
 				</p>
 			</div>
-			<div class="container-wide flex flex-center flex-wrap-m flex-column flex-row-m">
+			<div class="portfolio-wrap center">
 				<?php
-				while ( have_posts() ) :
-					the_post();
+				$the_query = new WP_Query( array(
+	        'post_type' => 'Portfolio',
+	        'order' => 'DESC',
+	        'posts_per_page' => 9,
+					'paged' => get_query_var( 'paged' ),
+	        )
+	      );?>
+        <?php
+          while ( $the_query->have_posts() ) :
+          $the_query->the_post();
 					get_template_part( 'template-parts/content', get_post_type() );
-				endwhile; // End of the loop.
+					endwhile;
+
+
+        ?>
+			</div>
+			<div class="pagination-wrapper">
+				<?php
+				get_template_part( '/inc/blog/archive-pagination' );
 				?>
 			</div>
 		</div>

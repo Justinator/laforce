@@ -58,10 +58,15 @@ website:    http://www.burocratik.com
 .blog .hero svg{width:15px;fill:#fff}
 .blog .article-wrapper:first-of-type{display:none}
 .blog .entry-header{display:block}
+.blog .thumbnail-wrapper{overflow:hidden;position:relative}
+.blog .thumbnail-wrapper .read-more-button{position:absolute;bottom:7px;right:0;-webkit-transform:translateX(160px);transform:translateX(160px);-webkit-transition:.2s ease;transition:.2s ease;background-color:#61a60e;padding:10px}
+.blog .thumbnail-wrapper .read-more-button a{color:#fff;text-decoration:none}
 .paged .featured-post{display:none}
-.blog article,.category article,.archive article{-webkit-transition:.2s ease;transition:.2s ease;-webkit-transition:opacity .2s ease;transition:opacity .2s ease}
-.blog article:hover h2 a,.blog article:focus h2 a,.category article:hover h2 a,.category article:focus h2 a,.archive article:hover h2 a,.archive article:focus h2 a{color:#61a60e;-webkit-transition:.2s ease;transition:.2s ease}
-.blog article:hover img,.blog article:focus img,.category article:hover img,.category article:focus img,.archive article:hover img,.archive article:focus img{opacity:.8;-webkit-transition:opacity .2s ease;transition:opacity .2s ease}
+.blog article,.category article,.archive article{-webkit-transition:.2s ease;transition:.2s ease}
+.blog article:hover,.blog article:focus,.category article:hover,.category article:focus,.archive article:hover,.archive article:focus{-webkit-transform:translateY(-5px);transform:translateY(-5px);-webkit-transition:.2s ease;transition:.2s ease}
+.blog article:hover h2 a,.blog article:focus h2 a,.category article:hover h2 a,.category article:focus h2 a,.archive article:hover h2 a,.archive article:focus h2 a{color:#61a60e;letter-spacing:.2px;-webkit-transition:.2s ease;transition:.2s ease}
+.blog article:hover .read-more-button,.blog article:focus .read-more-button,.category article:hover .read-more-button,.category article:focus .read-more-button,.archive article:hover .read-more-button,.archive article:focus .read-more-button{-webkit-transform:translateY(0);transform:translateY(0);-webkit-transition:.2s ease;transition:.2s ease}
+.blog article:hover img,.blog article:focus img,.category article:hover img,.category article:focus img,.archive article:hover img,.archive article:focus img{opacity:.8}
 .pagination-wrapper{width:99%}
 .archive-content{position:relative;padding-bottom:50px}
 .archive-content .pagination{bottom:0;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border-top:2px solid #e8e8e8}
@@ -539,7 +544,8 @@ h6{font-size:1.2em}
 .page-id-473 .children a{color:#002f6d !important;-webkit-transition:.2s ease;transition:.2s ease}
 .page-id-473 .children a:hover,.page-id-473 .children a:focus{color:#61a60e !important;-webkit-transition:.2s ease;transition:.2s ease}
 #portfolio-hero{background-image:url("/assets/css/wp-content/themes/insightcustom/images/Doors-and-Frames-cropped.jpg")}
-.archive .fig{max-width:300px;margin:10px}
+.archive .portfolio-wrap{display:grid;grid-template-columns:1fr;justify-items:center;max-width:1300px;gap:20px}
+.archive .fig{max-width:500px;margin-bottom:0;height:300px}
 .portfolio-template-default #project-details .post-thumbnail{display:none}
 .gallery-container .gallery{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .gallery-container .gallery figure{margin:10px;max-width:400px}
@@ -566,6 +572,8 @@ h6{font-size:1.2em}
 .nav-links-container .nav-back a:hover svg,.nav-links-container .nav-back a:focus svg,.posts-navigation .nav-back a:hover svg,.posts-navigation .nav-back a:focus svg{-webkit-transform:scale(1.1);transform:scale(1.1);-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;transition:transform .2s ease;transition:transform .2s ease,-webkit-transform .2s ease}
 .nav-links-container .back,.posts-navigation .back{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .nav-links-container svg,.posts-navigation svg{width:30px;fill:#002f6d}
+.post-type-archive .pagination-wrapper{margin-top:50px}
+.post-type-archive .pagination{bottom:0;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border-top:2px solid #e8e8e8}
 .page-id-483 .featured-project .container-wide{width:100%;padding:0}
 .page-id-483 .featured-project h4{padding-left:20px}
 .external svg{width:20px;margin-left:10px;fill:#002f6d;-webkit-transition:.2s ease;transition:.2s ease}
@@ -728,6 +736,7 @@ body,button,input,select,optgroup,textarea{font-size:20px}
 .text-left-m{text-align:left !important}
 .text-right-m{text-align:right !important}
 .text-center-m{text-align:center !important}
+.archive .portfolio-wrap{grid-template-columns:1fr 1fr}
 .gallery-container .gallery{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .gallery-container .gallery figure{max-width:calc(90% / 3)}
 .nav-links-container .nav-links .nav-next span,.nav-links-container .nav-links .nav-previous span,.posts-navigation .nav-links .nav-next span,.posts-navigation .nav-links .nav-previous span{display:block}
@@ -834,12 +843,14 @@ body,button,input,select,optgroup,textarea{font-size:20px}
 .text-left-l{text-align:left !important}
 .text-right-l{text-align:right !important}
 .text-center-l{text-align:center !important}
+.affiliate-inner{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.archive .portfolio-wrap{grid-template-columns:1fr 1fr 1fr}
 .aspect-ratio{height:auto}
 #contact .col50{padding-right:20px}
 .small-map-wrapper{margin-top:-100px}
 .fig-tall{height:520px}
 .wp-block-column:nth-child(2n){margin-left:32px}
-.services .wp-block-column:nth-child(2n){margin-left:32px}
+.services .wp-block-column:nth-child(2n){margin-left:32px;margin-right:0}
 .services .wp-block-column{-ms-flex-preferred-size:calc(50% - 16px);flex-basis:calc(50% - 16px)}
 }@media(min-width:1400px){.menu-main-menu-container{width:60%}
 .w-10-xl{width:10%}
@@ -861,7 +872,6 @@ body,button,input,select,optgroup,textarea{font-size:20px}
 .w-two-thirds-xl{width:calc(100% / 1.5)}
 .w-auto-xl{width:auto}
 .container-wide{width:1300px}
-.archive .fig{max-width:400px}
 }@media(min-width:1600px){.masthead-inner{width:70%}
 .container-wide{width:1500px}
 }

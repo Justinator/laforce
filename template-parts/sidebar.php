@@ -37,7 +37,7 @@
 				<?php
 	    } elseif ( $parent == "217") {
 				?>
-	      <li><a href="https://www2.appone.com/Search/Search.aspx?ServerVar=laforceinc.appone.com" class="external flex flex-row flex-align-center" target="_blank">Job Openings <?php get_template_part("/inc/svg-icons/external-link"); ?></a></li>
+	      <li><a href="https://www2.appone.com/Search/Search.aspx?ServerVar=laforceinc.appone.com" class="external block" target="_blank">Job Openings <?php get_template_part("/inc/svg-icons/external-link"); ?></a></li>
 				<span class="screen-reader-text">Opens Job Openings link in a new window</span>
 				<?php
 			}

@@ -10,7 +10,14 @@
 ?>
 <div class="article-wrapper w-100 w-50-m">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<?php insightCustom_post_thumbnail(); ?>
+		<div class="thumbnail-wrapper">
+			<?php insightCustom_post_thumbnail(); ?>
+			<div class="read-more-button">
+				<a href="<?php the_permalink(); ?>">
+					Read More<span class="screen-reader-text"> about <?php the_title(); ?></span>
+				</a>
+			</div>
+		</div>
 		<header class="entry-header">
 			<?php
 			if ( is_singular() ) :

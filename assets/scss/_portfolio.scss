@@ -2,12 +2,23 @@
   background-image: url('/assets/css/wp-content/themes/insightcustom/images/Doors-and-Frames-cropped.jpg');
 }
 .archive {
-  .fig {
-    max-width: 300px;
-    margin: 10px;
-    @include breakpoint (largeScreen) {
-      max-width: 400px;
+  .portfolio-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 1300px;
+    gap: 20px;
+    @include breakpoint (mediumScreen) {
+      grid-template-columns: 1fr 1fr;
     }
+    @include breakpoint (laptopScreen){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .fig {
+    max-width: 500px;
+    margin-bottom: 0;
+    height: 300px;
   }
 }
 .portfolio-template-default {
@@ -176,5 +187,17 @@
   svg {
     width: 30px;
     fill: $brandColor;
+  }
+}
+.post-type-archive .pagination-wrapper {
+  margin-top: 50px;
+}
+.post-type-archive {
+  .pagination {
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid $lightGrey;
   }
 }

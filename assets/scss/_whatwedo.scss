@@ -26,6 +26,9 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  @include breakpoint (laptopScreen) {
+    justify-content: flex-start;
+  }
   img {
     padding: 5px;
   }

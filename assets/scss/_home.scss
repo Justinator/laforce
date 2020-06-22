@@ -95,6 +95,7 @@
     }
     @include breakpoint (laptopScreen) {
       margin-left: 32px;
+      margin-right: 0;
     }
   }
   @include breakpoint (smallScreen) {

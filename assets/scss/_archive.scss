@@ -63,6 +63,23 @@
   .entry-header {
     display: block;
   }
+  .thumbnail-wrapper {
+    overflow: hidden;
+    position: relative;
+    .read-more-button {
+      position: absolute;
+      bottom: 7px;
+      right: 0;
+      transform: translateX(160px);
+      transition: .2s ease;
+      background-color: $accentColor;
+      padding: 10px;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
 }
 .paged {
   .featured-post {
@@ -72,17 +89,22 @@
 .blog, .category, .archive {
   article {
     transition: .2s ease;
-    transition: opacity .2s ease;
     &:hover, &:focus {
+      transform: translateY(-5px);
+      transition: .2s ease;
       h2 {
         a {
           color: $accentColor;
+          letter-spacing: .2px;
           transition: .2s ease;
         }
       }
+      .read-more-button {
+        transform: translateY(0);
+        transition: .2s ease;
+      }
       img {
         opacity: .8;
-        transition: opacity .2s ease;
       }
     }
   }
