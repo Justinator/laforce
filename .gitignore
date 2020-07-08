@@ -3,12 +3,12 @@
 # Ignore all directories called node_modules in current folder and any subfolders.
 node_modules/
 /node_modules/
-wpgulp.config.js
-package.json
-package-lock.json
-gulpfile.babel.js
-.eslintrc.js
-.editorconfig
+/wpgulp.config.js
+/package.json
+/package-lock.json
+/gulpfile.babel.js
+/.eslintrc.js
+/.editorconfig
 
 # Packages #
 ############
