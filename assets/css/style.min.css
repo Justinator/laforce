@@ -5,7 +5,7 @@ hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visib
 pre{font-family:monospace,monospace;font-size:1em}
 a{background-color:transparent}
 abbr[title]{border-bottom:0;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}
-b,strong{font-weight:bolder}
+b,strong{font-weight:bold}
 code,kbd,samp{font-family:monospace,monospace;font-size:1em}
 small{font-size:80%}
 sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
@@ -468,6 +468,8 @@ ul{padding:15px;margin:0}
 .hero-slider .flickity-page-dots{bottom:30px;width:50%}
 .hero-slider .flickity-page-dots .dot{width:10px;height:10px;opacity:1;background:#fff;border:#fff}
 .hero-slider .flickity-page-dots .dot.is-selected{background:#61a60e;border:#61a60e}
+.flickity-button{display:none}
+.arrow{fill:#61a60e;stroke:#61a60e}
 .testimonial-slider{width:100%;height:60vh;overflow:hidden;background-repeat:no-repeat;background-size:cover;background-position:center !important}
 .testimonial-slider .carousel-cell{width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex}
 .testimonial-slider .carousel-cell .overlay{position:absolute;width:100%;height:100%;top:0;bottom:0;left:0;right:0;background:rgba(0,47,109,0.75)}
@@ -475,7 +477,7 @@ ul{padding:15px;margin:0}
 .testimonial-slider .flickity-page-dots{bottom:30px;width:50%}
 .testimonial-slider .flickity-page-dots .dot{width:10px;height:10px;opacity:1;background:#fff;border:#fff}
 .testimonial-slider .flickity-page-dots .dot.is-selected{background:#61a60e;border:#61a60e}
-body,button,input,select,optgroup,textarea{color:#54575a;font-family:"Titillium Web",Arial,sans-serif;font-size:18px;line-height:1.4em}
+body,button,input,select,optgroup,textarea{color:#54575a;font-family:"Titillium Web",Arial,sans-serif;font-size:18px;line-height:1.5em}
 h1,h2,h3,h4,h5,h6{font-family:"Titillium Web",Arial,sans-serif;font-weight:700;color:#002f6d;line-height:1.1em;margin-top:0;margin-bottom:15px}
 p{margin-top:0;margin-bottom:1rem}
 h1{font-size:2.1em}
@@ -610,7 +612,7 @@ h6{font-size:1.2em}
 .icon-wrapper{background:#002f6d;border-radius:50px;height:80px;width:80px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .icon-wrapper svg{width:50px;fill:#fff}
 .featured-project-wrap .container-wide{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-.featured-project-content{margin:20px;border:0 none;padding:20px 20px 1px;background:#FFF;-webkit-box-shadow:inset 0 0 0 2px #b5be00,inset 0 0 0 8px #e8e8e8;box-shadow:inset 0 0 0 2px #b5be00,inset 0 0 0 8px #e8e8e8}
+.featured-project-content{margin:20px;border:0 none;padding:20px 20px 1px;background:#FFF;-webkit-box-shadow:inset 0 0 0 2px #61a60e,inset 0 0 0 8px #e8e8e8;box-shadow:inset 0 0 0 2px #61a60e,inset 0 0 0 8px #e8e8e8}
 .featured-project-inner{padding:20px 20px 40px 20px}
 .partner-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:distribute;justify-content:space-around}
 #pages .pagenav{list-style-type:none}
@@ -637,6 +639,7 @@ h6{font-size:1.2em}
 .flex-justify-center-s{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .flex-justify-between-s{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .flex-justify-around-s{-ms-flex-pack:distribute;justify-content:space-around}
+.site-content{margin-top:100px}
 #privacy-policy{margin-top:110px}
 #privacy-policy{margin-top:125px}
 .secondary-menu-wrap{top:100px}
@@ -831,6 +834,7 @@ body,button,input,select,optgroup,textarea{font-size:20px}
 .overlay{width:50%}
 .hero-slider .carousel-cell .inner{width:40%}
 .hero-slider .carousel-cell .inner .title{font-size:2.6rem}
+.flickity-button{display:block}
 .testimonial-slider{height:45vh}
 .g1{font-size:2.1em}
 .g2{font-size:1.8em}

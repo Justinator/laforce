@@ -145,7 +145,7 @@ Enqueue scripts and styles
 function insightcustom_scripts() {
 	wp_enqueue_style( 'insightcustom-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'insight-custom-style', get_stylesheet_directory_uri() . '/assets/css/style.min.css');
-	wp_enqueue_style( 'titillium-web', 'https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900&display=swap', false );
+	wp_enqueue_style( 'titillium-web', 'https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&display=swap', false );
 	wp_enqueue_script( 'flickity', get_template_directory_uri() . '/assets/libs/flickity/flickity.pkgd.min.js' );
 	wp_enqueue_script( 'customizer', get_template_directory_uri() . '/assets/js/customizer.js' );
 	wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/js/custom.min.js' );

@@ -20,7 +20,6 @@
 	<link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
 	<link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
 	<link href="/assets/css/wp-content/themes/insightcustom/images/laforce-fav.png" rel="shortcut icon">
-	<!--
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-27521876-1']);
@@ -32,7 +31,6 @@
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 	</script>
-	-->
 	<?php
 
 		if( get_theme_mod( 'header_scripts' ) ) {

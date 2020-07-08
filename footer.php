@@ -20,7 +20,7 @@
 <script>
 		var options = {
 	  accessibility: true,
-		prevNextButtons: false,
+		prevNextButtons: true,
 	  pageDots: true,
 	  setGallerySize: false,
 		wrapAround: true,

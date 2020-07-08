@@ -8,6 +8,9 @@ body{
 }
 .site-content {
 	margin-top: 80px;
+	@include breakpoint (smallScreen) {
+		margin-top: 100px;
+	}
 	@include breakpoint (laptopScreen) {
 		margin-top: 180px;
 	}
