@@ -274,7 +274,7 @@ a:hover,a:focus{color:#61a60e;-webkit-transition:.2s ease;transition:.2s ease;ou
 .main-menu-wrapper ul{padding:0}
 .main-menu{width:90%;margin:0 auto}
 .main-menu li{list-style-type:none;padding:15px 5px}
-.main-menu a{position:relative;font-family:"Titillium Web",Arial,sans-serif;font-size:18px;font-weight:normal;color:#fff;padding:0 10px;text-decoration:none;text-transform:uppercase;-webkit-transition:.2s ease;transition:.2s ease}
+.main-menu a{position:relative;font-family:"Titillium Web",Arial,sans-serif;font-size:16px;font-weight:normal;color:#fff;padding:0 10px;text-decoration:none;text-transform:uppercase;-webkit-transition:.2s ease;transition:.2s ease}
 .main-menu a:after{position:absolute;content:"";left:0;bottom:0;width:100%;height:2px;background:#61a60e;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transition:-webkit-transform .3s ease;transition:-webkit-transform .3s ease;transition:transform .3s ease;transition:transform .3s ease,-webkit-transform .3s ease}
 .main-menu a:hover,.main-menu a:focus{color:#61a60e !important;-webkit-transition:.2s ease;transition:.2s ease}
 .main-menu a:hover:after,.main-menu a:focus:after{-webkit-transform:scaleX(1);transform:scaleX(1)}
@@ -350,6 +350,9 @@ svg{width:20px}
 .medium-icon{display:inline-block;width:16px;height:16px;stroke-width:0}
 .large-icon{display:inline-block;width:30px;height:30px;stroke-width:0}
 img,iframe{max-width:100%;height:auto}
+.wp-block-embed-youtube{margin:0}
+.wp-block-embed-youtube .wp-block-embed__wrapper{position:relative;width:100%;height:0;padding-bottom:56.25%}
+.wp-block-embed-youtube .wp-block-embed__wrapper iframe{position:absolute;width:100%;height:100%;left:0;top:0}
 .layout-center-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .cover-image,.background-image{background-size:cover;background-repeat:no-repeat;background-position:center}
 .background-image{position:absolute;top:0;left:0;height:100%;width:100%;display:block}

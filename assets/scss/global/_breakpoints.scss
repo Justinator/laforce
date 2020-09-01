@@ -11,6 +11,9 @@
   @else if $point == laptopScreen {
     @media (min-width: 1024px)  { @content; }
   }
+  @else if $point == desktopScreen {
+    @media (min-width: 1200px)  { @content; }
+  }
   @else if $point == largeScreen {
     @media (min-width: 1400px) { @content; }
   }
