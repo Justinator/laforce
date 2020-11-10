@@ -33,6 +33,13 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php
+
+	if( get_theme_mod( 'body_scripts' ) ) {
+		echo get_theme_mod( 'body_scripts' );
+	}
+
+?>
 <a class="screen-reader-skip-to-content" href="#main-content" tabindex="0">Skip to main content</a>
 <a class="screen-reader-skip-to-content" href="#footer" tabindex="0">Skip to footer content</a>
 <div id="page" class="site">

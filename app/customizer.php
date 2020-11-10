@@ -216,13 +216,23 @@ function insightcustom_customize_register( $wp_customize ) {
 		'type'     => 'textarea',
 		)
 	);
+	$wp_customize->add_setting('body_scripts');
+	$wp_customize->add_control('body_scripts',
+	array(
+		'label'    => __( 'Body Scripts', 'insightcustom' ),
+		'description' => 'Add tracking codes or other scripts that need to be output just below the opening <body> tag.',
+		'section'  => 'insert_scripts',
+		'settings' => 'body_scripts',
+		'type'     => 'textarea',
+		)
+	);
 	$wp_customize->add_setting('footer_scripts');
 	$wp_customize->add_control('footer_scripts',
 	array(
 		'label'    => __( 'Footer Scripts', 'insightcustom' ),
 		'description' => 'Add tracking codes or other scripts that need to be output in the footer section of your website, just above the closing body tag',
 		'section'  => 'insert_scripts',
-		'settings' => 'header_scripts',
+		'settings' => 'footer_scripts',
 		'type'     => 'textarea',
 		)
 	);
